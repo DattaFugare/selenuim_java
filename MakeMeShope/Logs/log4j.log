@@ -1,0 +1,13 @@
+07:22:21.765 [main] INFO  - Environment url get hitting
+07:22:25.464 [main] INFO  -  URL get Fine , Application is Up&Running
+07:22:25.470 [main] INFO  - Pages are Loaded and element is find 
+07:22:25.798 [main] INFO  - entered useremail 
+07:22:25.993 [main] INFO  - entered password 
+07:22:26.214 [main] INFO  - clicked loginbtn 
+07:22:26.947 [main] INFO  - validation is done
+07:22:29.518 [main] INFO  - Environment url get hitting
+07:22:33.247 [main] INFO  -  URL get Fine , Application is Up&Running
+07:22:33.247 [main] INFO  - Pages are Loaded and element is find 
+07:22:33.650 [main] INFO  - entered useremail 
+07:22:33.884 [main] INFO  - entered password 
+07:22:34.105 [main] INFO  - clicked loginbtn 
