@@ -2,6 +2,8 @@ package WebPages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.PageFactory;
 
 public class LogIn_Page {
 
@@ -10,6 +12,7 @@ public class LogIn_Page {
 	public LogIn_Page(WebDriver driver)
 	{
 		this.driver=driver;
+		 
 	}
 	
 	//private By login = By.cssSelector(".ico-login");
@@ -28,13 +31,19 @@ public class LogIn_Page {
 	{
 		driver.findElement(userPassword).sendKeys(userpassword);
 	}
-	public void clickonlogin()
+	public Dashbordpage clickonlogin()
 	{
 		driver.findElement(loginbutton).click();
+		return new Dashbordpage(driver);
 		 
 	}
-	
-	
+//	
+//	  public Dashbordpage login(String usr, String pwd) {
+//		  ((WebElement) userEmail).sendKeys(usr);
+//		  ((WebElement) userPassword).sendKeys(pwd);
+//		  ((WebElement) loginbutton).click();
+//	        return new Dashbordpage(driver);  // Return the next page object
+//	    }
 //	 public void clicklogin() {
 //	        driver.findElement(login).click();
 //	    }

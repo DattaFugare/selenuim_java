@@ -21,17 +21,17 @@ public class Register_Test {
 		driver.get("https://demowebshop.tricentis.com/");
 	
 		
-		Register register1 = new Register(driver);
-		register1.clickregister();
-		register1.clickmale();
-		register1.enterFirstName("Dattatray");
+		Register register = new Register(driver);
+		register.clickregister();
+		register.clickmale();
+		register.enterFirstName("Dattatray");
 		
-		register1.enterLastName("Fugare");
+		register.enterLastName("Fugare");
 		
-		register1.entermail("dattatrayfugare18@gmail.com");
-		register1.enterPassword("@Fugare777");
-		register1.enterConfirmPassword("@Fugare777");
-		register1.clickcontinuebutton();
+		register.entermail("dattatrayfugare18@gmail.com");
+		register.enterPassword("@Fugare777");
+		register.enterConfirmPassword("@Fugare777");
+		register.clickcontinuebutton();
 	
 		
        	//driver.findElement(".ico-register")

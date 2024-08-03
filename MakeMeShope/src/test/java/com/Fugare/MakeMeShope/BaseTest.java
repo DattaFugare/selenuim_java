@@ -8,8 +8,11 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class BaseTest {
-	 protected WebDriver driver;
+	 protected static WebDriver driver;
 	  protected WebDriverWait wait;
+	  
+	 
+	  
 	 public void setUp() {
 //	        Set the path of the ChromeDriver executable
 //	        System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");
@@ -32,6 +35,8 @@ public class BaseTest {
 	        // Initialize WebDriverWait
 	        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	    }
+	 
+
 
 	    // Method to clean up after tests
 	 public void tearDown() {

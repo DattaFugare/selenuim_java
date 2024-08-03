@@ -5,6 +5,7 @@ import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -17,6 +18,7 @@ public class Dashbordpage {
 			public Dashbordpage(WebDriver driver)
 			{
 	        	this.driver=driver;
+	        	 PageFactory.initElements(driver, this);
 			}
 	
 	private By auto = By.cssSelector("div[class='left mt-1'] h3");
@@ -25,6 +27,9 @@ public class Dashbordpage {
 		  WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	        WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(auto));
 	        return element.getText();
+    }
+	public String getHomePageTitle() {
+        return driver.getTitle();
     }
 	}
 
